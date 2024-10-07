@@ -13,6 +13,8 @@
     "@react-spring/three": "^9.7.4",
     "@react-three/drei": "^9.109.2",
     "@react-three/fiber": "^8.16.8",
+    "@studio-freight/lenis": "^1.0.42",
+    "@tabler/icons-react": "^3.19.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.30",
     "gsap": "^3.12.5",

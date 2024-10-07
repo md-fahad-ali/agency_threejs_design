@@ -1,101 +1,33 @@
-import React from "react";
-import { SplitText } from "../ui/SplitText";
-import Image from "next/image";
+import React from 'react'
 
 export default function Project() {
-  const data = Array.from({ length: 3 }, (_, i) => i + 1);
+    return (
+        <div className="mt-[300px]">
+            <div className="pl-[150px] flex justify-between flex-wrap">
 
-  return (
-    <div>
-      <h1 className="text-9xl">
-        <SplitText>Our Works</SplitText>
-      </h1>
+                <h1 className="text-9xl grid">
+                    <span>
+                        Our
+                    </span>
+                    <span className="pl-[100px]">
+                        Works
+                    </span>
 
-      <div class="flex flex-wrap justify-center mt-10">
+                </h1>
+                <div className="w-[50%]">
+                    <h1 className="text-7xl text-wrap flex flex-col pr-[50px]">
+                        <span>
+                            Transforming Ideas
+                        </span>
 
-
-<div class="p-4 max-w-sm">
-    <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
-        <div class="flex items-center mb-3">
-            <div
-                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
+                        <span>
+                            into Impact
+                        </span></h1>
+                    <p className="text-balance">{`Let's be real, your online presence is your first impression. Why settle for average when your website, app, and digital marketing can captivate and inspire? Bold brands break boundaries, and those who dare to push their creative limits turn visitors into loyal fans. Elevate your brand with dynamic websites, intuitive apps, and strategic digital marketing that set you apart.
+`}
+                    </p>
+                </div>
             </div>
-            <h2 class="text-white dark:text-white text-lg font-medium">Feature 1</h2>
         </div>
-        <div class="flex flex-col justify-between flex-grow">
-            <p class="leading-relaxed text-base text-white dark:text-gray-300">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
-            </p>
-            <a href="#" class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </a>
-        </div>
-    </div>
-</div>
-
-
-<div class="p-4 max-w-sm">
-    <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
-        <div class="flex items-center mb-3">
-            <div
-                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
-            </div>
-            <h2 class="text-white dark:text-white text-lg font-medium">Feature 2</h2>
-        </div>
-        <div class="flex flex-col justify-between flex-grow">
-            <p class="leading-relaxed text-base text-white dark:text-gray-300">
-                Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum inventore et maxime amet.
-            </p>
-            <a href="#" class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </a>
-        </div>
-    </div>
-</div>
-
-
-<div class="p-4 max-w-sm">
-    <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
-        <div class="flex items-center mb-3">
-            <div
-                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
-            </div>
-            <h2 class="text-white dark:text-white text-lg font-medium">Feature 3</h2>
-        </div>
-        <div class="flex flex-col justify-between flex-grow">
-            <p class="leading-relaxed text-base text-white dark:text-gray-300">
-                Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum inventore et maxime amet.
-            </p>
-            <a href="#" class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </a>
-        </div>
-    </div>
-</div>
-
-</div>
-
-    </div>
-  );
+    )
 }

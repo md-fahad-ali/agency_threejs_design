@@ -8,6 +8,8 @@ import Who from "./components/Who";
 import Button from "./ui/Buttons";
 import What from "./components/What";
 import List from "./components/List";
+import Project from "./components/Project";
+import Services from "./components/Services";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,8 +25,10 @@ export default function Home() {
         <Brand />
         <br />
         <br />
-        <What />
-        <List/>
+        {/* <What /> */}
+        <Services />
+        <List />
+        {/* <Project /> */}
       </div>
     </main>
   );

@@ -1,3 +1,4 @@
+"use client"
 import gsap from "gsap";
 import React, { useLayoutEffect, useState } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -82,6 +83,7 @@ export default function Another() {
     const cards = document.querySelectorAll(".custom-card");
     ScrollTrigger.refresh();
     cards.forEach((card, index) => {
+      const yp = (150 - (index * 10));
       tl.fromTo(
         card,
         {
@@ -89,7 +91,7 @@ export default function Another() {
           opacity: 1,
         },
         {
-          yPercent: 0,
+          yPercent: index * 3,
           opacity: 1,
           duration: 0.5,
           ease: "power2.out",
@@ -102,7 +104,7 @@ export default function Another() {
           opacity: 1,
         },
         {
-          scale: 0.98, // Slightly reduced scale animation for smoother effect
+          scale: 0.98 + (index * 0.01), // Slightly reduced scale animation for smoother effect
           opacity: 1,
           duration: 1,
           ease: "power2.out",
