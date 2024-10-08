@@ -3,7 +3,7 @@ import CityFuture from "./City";
 import Navbar from "./Navbar";
 import gsap from "gsap";
 import Lottie from "lottie-react";
-import Wave from "../animations/wave.json";
+import Wave from '../pages/animations/wave.json'
 import Button from "../ui/Buttons";
 
 export default function Poster() {
@@ -89,7 +89,7 @@ export default function Poster() {
                         className="flex-shrink-0 opacity-0 truncate inline relative pl-3 lg:pl-5"
                         style={{ zIndex: 1 }}
                       >
-                        Tomorrow's Visions &nbsp;&nbsp;
+                        {`Tomorrow's Visions `}&nbsp;&nbsp;
                         <br />
                       </span>
                       <span

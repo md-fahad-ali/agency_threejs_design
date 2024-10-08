@@ -9,9 +9,9 @@ export default function MotionTextSingle({
 }) {
   return (
     <div>
-      <Element ref={textRef} className={className}>
+      <elementType ref={textRef} className={className}>
         {children}
-      </Element>
+      </elementType>
     </div>
   );
 }

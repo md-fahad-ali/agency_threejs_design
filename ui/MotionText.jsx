@@ -29,13 +29,13 @@ const MotionText = ({
     };
   }, []);
 
-  const Element = elementType === "p" ? "p" : "h1";
+
 
   return (
     <div className={upperClass}>
-      <Element id="splitText" ref={textRef} className={className}>
+      <elementType id="splitText" ref={textRef} className={className}>
         {children}
-      </Element>
+      </elementType>
     </div>
   );
 };

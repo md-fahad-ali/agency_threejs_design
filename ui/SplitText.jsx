@@ -25,3 +25,6 @@ export function SplitText({ children, ...rest }) {
     );
   });
 }
+
+// Add this line to export SplitText as default
+export default SplitText;

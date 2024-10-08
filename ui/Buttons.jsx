@@ -37,7 +37,7 @@ const Button = ({ button1Ref, children, width, height, className, color }) => {
     }
     // Handle animation logic
     function handleMouseEnter() {
-      console.log("entering");
+      // console.log("entering");
 
       const tl = gsap.timeline();
       tl.fromTo(

@@ -3,7 +3,7 @@ import React, { useLayoutEffect, useState } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
-import { SplitText } from "./ui/SplitText";
+import { SplitText } from "../ui/SplitText";
 
 import { motion } from "framer-motion";
 const montserrat = Montserrat({ subsets: ["latin"] });

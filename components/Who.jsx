@@ -1,10 +1,7 @@
 import React from "react";
-import MotionText from "../ui/MotionText";
-import { LampContainer } from "../ui/LampSetup";
+
 import { motion } from "framer-motion";
-import { cn } from "../lib/utils";
-import { SplitText } from "../ui/SplitText";
-import { SplitLine } from "../ui/SplitLine";
+
 import { Oswald } from "next/font/google";
 import Button from "../ui/Buttons";
 

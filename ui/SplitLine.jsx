@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export function SplitLine({ children, className, ...rest }) {
+export default function SplitLine({ children, className, ...rest }) {
   // Ensure children is treated as a string
   const text = typeof children === "string" ? children : children?.toString();
   const lines = text.split(/\r?\n/); // Handles both \n and \r\n
 
   lines.forEach((element) => {
-    console.log(element.trim());
+    // console.log(element.trim());
   });
   return (
     <div style={{ display: "block" }} className={className}>

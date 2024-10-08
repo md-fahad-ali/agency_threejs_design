@@ -72,7 +72,7 @@ export default function Services() {
         requestAnimationFrame(raf)
     })
 
-    console.log(scrollYProgress.current)
+    // console.log(scrollYProgress.current)
 
 
 

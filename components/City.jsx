@@ -1,3 +1,4 @@
+"use clients"
 import React, { useState, useEffect, useMemo, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
@@ -228,7 +229,7 @@ export default function CityFuture({ canvaRef }) {
 
   return (
     <Canvas
-    ref={canvaRef}
+      ref={canvaRef}
       shadows
       onMouseMove={(e) => {
         mouse.current.x = (e.clientX / window.innerWidth) * 2 - 1;

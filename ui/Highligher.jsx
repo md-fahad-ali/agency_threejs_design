@@ -75,3 +75,6 @@ export const Highlight = ({ children, className }) => {
     </motion.span>
   );
 };
+
+// Add a default export for HeroHighlight or Highlight
+export default HeroHighlight;
