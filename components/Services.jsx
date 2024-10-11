@@ -85,7 +85,7 @@ export default function Services() {
                     </h1>
                 </motion.div>
             </div>
-            <main ref={container} className="mt-[50vh]">
+            <main ref={container} className="mt-[10vh]">
                 {actual_data?.map((e, i) => {
                     const targetScale = 1 - ((actual_data.length - i) * 0.05);
 

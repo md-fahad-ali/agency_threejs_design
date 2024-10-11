@@ -9,11 +9,9 @@ import Who from "../components/Who";
 import List from "../components/List";
 import Services from "../components/Services";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
-    <main className={`relative z-[999] ${inter.className}`}>
+    <main className={`relative z-[999] `}>
       <Navbars />
       <div className="mt-[70px]">
         <Poster />
