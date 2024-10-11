@@ -56,7 +56,7 @@ export default function Card({ title, targetScale, progress, description, image,
     const size = useWindowSize();
 
     const getTopStyle = (index) => {
-        console.log(size.width, 584)
+        // console.log(size.width, 584)
         if (size.width < 584) {
 
             if (index === 0) {

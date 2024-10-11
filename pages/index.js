@@ -2,7 +2,7 @@ import React from "react";
 
 import { Inter } from "next/font/google";
 import Poster from "../components/Poster";
-import Navbar from "../components/Navbar";
+import Navbars from "../components/Navbars";
 import Brand from "../components/Brand";
 import Who from "../components/Who";
 
@@ -14,8 +14,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={`relative z-[999] ${inter.className}`}>
-      <Navbar />
-      <div>
+      <Navbars />
+      <div className="mt-[70px]">
         <Poster />
         <br />
         <Who />

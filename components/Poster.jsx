@@ -4,7 +4,10 @@ import Navbar from "./Navbar";
 import gsap from "gsap";
 import Lottie from "lottie-react";
 import Wave from '../pages/animations/wave.json'
-import Button from "../ui/Buttons";
+import Button from "@/components/Button";
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({ weight: '400', subsets: ["latin"] });
 
 export default function Poster() {
   const textRef1 = useRef(null);
@@ -56,7 +59,7 @@ export default function Poster() {
     <div className="bg-zinc-900 text-white">
       <section className="flex w-full items-center content-center justify-center">
         <div className="w-[100%] md:w-[85%]">
-          <div className="flex pl-16 z-[9] items-center relative gap-[10px] top-[39px]">
+          <div className="flex pl-[3.5rem] lg:pl-16 z-[9] items-center relative gap-[10px] top-[39px]">
             <p className=" text-white">Hey We are Flowbit</p>
             <Lottie animationData={Wave} loop={true} className="w-[30px]" />
           </div>
@@ -66,7 +69,7 @@ export default function Poster() {
                 <div className="flex">
                   <div className="relative">
                     <h1
-                      className="gooey-text lg:text-6xl md:text-5xl sm:text-4xl text-2xl bg-zinc-900 inline tracking-tight"
+                      className={`gooey-text text-xl lg:text-6xl md:text-5xl sm:text-4xl ss:text-2xl bg-zinc-900 inline tracking-tight ${roboto.className}`}
                       style={{
                         lineHeight: 1.3,
                         paddingBottom: "25px",
@@ -154,7 +157,7 @@ export default function Poster() {
                 </div>
                 <div className="flex space-x-4">
                   <Button
-                    className=" bg-black relative left-[10px]"
+                    className=" bg-black relative left-[10px] border-none"
                     button1Ref={button1Ref}
                   >
                     Contact Us
@@ -169,8 +172,8 @@ export default function Poster() {
               </div>
             </div>
             <div
-              className="w-[100%] relative top-[2px] h-[80vh] overflow-hidden"
-              style={{ borderRadius: "21px" }}
+              className="w-[100%] relative top-[2px] h-[70vh] ss:h-[80dvh] overflow-hidden rounded-[30px]"
+              style={{ borderRadius: "30px" }}
             >
               <CityFuture canvaRef={canvaRef} />
             </div>

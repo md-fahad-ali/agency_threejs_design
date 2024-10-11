@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { Oswald } from "next/font/google";
-import Button from "../ui/Buttons";
+import Button from "@/components/Button";
 
 const oswald = Oswald({ subsets: ["latin"] });
 export default function Who() {
@@ -24,15 +24,15 @@ export default function Who() {
               <h1 className={`text-white text-xl `}>⚪ Who we are</h1>
             </motion.div>
           </div>
-          <div className="text-right w-[75%]">
+          <div className="text-right w-[75%] flex flex-col items-end">
             <p className={`text-white text-xl sm:text-2xl md:text-4xl `}>
               {`FlowBite is a web design, development, and digital marketing agency.
             We create impactful websites and strategies that enhance your online
             presence and drive success.`}
             </p>
             <br />
-            <Button className="" height="54px" color="blue">
-              About Flowbitw
+            <Button className="flex w-auto" height="54px" color="blue">
+              About Flowbite
             </Button>
           </div>
         </div>

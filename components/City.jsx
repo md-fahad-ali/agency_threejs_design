@@ -236,7 +236,7 @@ export default function CityFuture({ canvaRef }) {
         mouse.current.y = -(e.clientY / window.innerHeight) * 2 + 1;
       }}
       className={"w-100% "}
-      style={{ height: "100%" }}
+      style={{ height: "100%",borderRadius:"30px" }}
     >
       <CameraAnimation mouse={mouse} />
       <Scene mouse={mouse} />

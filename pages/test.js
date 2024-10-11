@@ -1,12 +1,15 @@
+import Button from "@/components/Button";
+import Navbars from "@/components/Navbars";
 import React from "react";
-import Project from "../components/Project";
-import Services from "../components/Services";
 
 export default function Test() {
   return (
     <div>
-      <h1>Hello World</h1>
-      <Services />
+      <Navbars />
+      <div className="h-[150vh] pt-16">
+        <h1>Hellowrold HellowroldHellowrold Hellowrold</h1>
+        <Button>Contact us</Button>
+      </div>
     </div>
   );
 }
