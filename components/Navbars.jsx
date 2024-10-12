@@ -51,6 +51,7 @@ const Navbars = () => {
                 backgroundColor: latest > 0 ? "rgba(29, 28, 28, 0.596)" : "rgba(87, 86, 86, 0)",
                 backdropFilter: latest > 0 ? "blur(15px)" : "blur(0px)",
                 width: latest > 0 ? "70%" : "100%",
+                top: latest > 0 ? "3px" : "0px",
                 borderRadius: latest > 0 ? "9999px" : "0px",
                 // boxShadow: latest > 0 ? "0 4px 6px -1px rgba(42, 41, 41, 0.275)), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" : "none",
             });
@@ -114,6 +115,7 @@ const Navbars = () => {
                                             backdropFilter: "blur(15px)",
                                             borderRadius: "0px",
                                             width: "100%",
+                                            top: "0px",
                                             // boxShadow: "0 4px 6px -1px rgba(29, 28, 28, 0.596), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                                             duration: 0.1,
                                             ease: "power2.out",

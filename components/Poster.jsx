@@ -69,7 +69,7 @@ export default function Poster() {
                 <div className="flex">
                   <div className="relative">
                     <h1
-                      className={`gooey-text text-[1.8rem] lg:text-6xl dm:text-5xl sm:text-4xl ss:text-2xl bg-zinc-900 inline tracking-tight ${roboto.className}`}
+                      className={`gooey-text text-[1.6rem] lg:text-6xl dm:text-5xl sm:text-4xl ss:text-2xl bg-zinc-900 inline tracking-tight ${roboto.className}`}
                       style={{
                         lineHeight: 1.3,
                         paddingBottom: "25px",
