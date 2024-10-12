@@ -110,7 +110,7 @@ export default function Poster() {
                       viewBox="0 0 43 39"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-[15px] relative top-[7px] sm:top-[9px]"
+                      className="w-[15px] relative top-[7px] sm:top-[7px]"
                     >
                       <path
                         d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z"

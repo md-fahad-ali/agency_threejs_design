@@ -194,7 +194,7 @@ const Navbars = () => {
                 ref={animationRef}
                 transition={{ duration: 0.3 }}
             >
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-[97rem] mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center">
                             <Link href="/" className="text-white font-bold text-lg">
@@ -205,6 +205,7 @@ const Navbars = () => {
                             <div className="ml-10 flex items-baseline space-x-4 text-white">
                                 <Link href="/" className="navanimation py-2 px-3 text-3xl md:text-base">Home</Link>
                                 <Link href="/about" className="navanimation py-2 px-3 text-3xl md:text-base">About</Link>
+                                <Link href="/blogs" className="navanimation py-2 px-3 text-3xl md:text-base">Blogs</Link>
                                 <Link href="/contact" className="navanimation py-2 px-3 text-3xl md:text-base">Contact</Link>
                             </div>
                         </div>
@@ -344,6 +345,9 @@ const Navbars = () => {
                         </Link>
                         <Link href="/about" className="navanimation pt-[30px]  text-5xl  " >
                             About
+                        </Link>
+                        <Link href="/blogs" className="navanimation pt-[30px]  text-5xl  " >
+                            Blogs
                         </Link>
                         <Link href="/contact" className="navanimation pt-[30px]  text-5xl  " >
                             Contact
