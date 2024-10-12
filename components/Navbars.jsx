@@ -209,7 +209,7 @@ const Navbars = () => {
                             </div>
                         </div>
 
-                        <Button className="hidden md:flex">Get Started</Button>
+                        <Button className="hidden md:flex text-nowrap">Get Started</Button>
                         <div className="block md:hidden">
                             <Hamburger onToggle={toggled => {
                                 const tl = gsap.timeline();

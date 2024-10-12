@@ -16,6 +16,8 @@ module.exports = {
       screens: {
         semi: "849px",
         ss: "439px",
+        dm:"875px",
+        sms:"772px",
       },
 
       animation: {

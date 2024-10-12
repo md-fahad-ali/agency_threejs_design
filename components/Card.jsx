@@ -89,6 +89,7 @@ export default function Card({ title, targetScale, progress, description, image,
                             style={{ height: '100%' }}
                             width={500}
                             height={500}
+                            priority={true}
                         />
                     </motion.div>
                 </div>

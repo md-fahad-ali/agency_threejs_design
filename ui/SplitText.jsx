@@ -14,7 +14,7 @@ export function SplitText({ children, ...rest }) {
           style={{ display: "inline-block", willChange: "transform" }}
           custom={i}
           whileInView={{ y: 0, opacity: 1 }} // Animation starts when in view
-          initial={{ y: "100%", opacity: 0 }} // Initial state before the element comes into view
+          initial={{ y: "50%", opacity: 0 }} // Initial state before the element comes into view
           transition={{
             delay: i * 0.1,
           }}

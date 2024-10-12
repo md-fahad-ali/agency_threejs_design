@@ -9,7 +9,7 @@ export default function Brand() {
   return (
     <div className="h-[10rem] rounded-md flex flex-col antialiased bg-transparent items-center justify-center relative overflow-hidden">
       <Slider
-        width="250px"
+        width="150px"
         duration={40}
         pauseOnHover={true}
         blurBorders={false}

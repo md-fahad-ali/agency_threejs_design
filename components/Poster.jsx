@@ -69,7 +69,7 @@ export default function Poster() {
                 <div className="flex">
                   <div className="relative">
                     <h1
-                      className={`gooey-text text-xl lg:text-6xl md:text-5xl sm:text-4xl ss:text-2xl bg-zinc-900 inline tracking-tight ${roboto.className}`}
+                      className={`gooey-text text-xl lg:text-6xl dm:text-5xl sm:text-4xl ss:text-2xl bg-zinc-900 inline tracking-tight ${roboto.className}`}
                       style={{
                         lineHeight: 1.3,
                         paddingBottom: "25px",
@@ -157,7 +157,7 @@ export default function Poster() {
                 </div>
                 <div className="flex space-x-4">
                   <Button
-                    className=" bg-black relative left-[10px] border-none"
+                    className=" bg-black relative -left-[9px] -top-[25px] border-none"
                     button1Ref={button1Ref}
                   >
                     Contact Us
