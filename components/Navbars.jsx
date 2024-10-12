@@ -23,7 +23,7 @@ const Navbars = () => {
     const controlNavbar = useCallback(() => {
         const currentScrollY = window.scrollY;
 
-        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        if (currentScrollY > lastScrollY && currentScrollY > 300) {
             setIsVisible(false);
         } else if (currentScrollY < lastScrollY) {
             setIsVisible(true);
@@ -48,134 +48,16 @@ const Navbars = () => {
             }
             setLatests(latest)
             controls.start({
-                backgroundColor: latest > 0 ? "rgba(74, 74, 74, 0.165)" : "rgba(87, 86, 86, 0)",
-                backdropFilter: latest > 0 ? "blur(10px)" : "blur(0px)",
+                backgroundColor: latest > 0 ? "rgba(29, 28, 28, 0.596)" : "rgba(87, 86, 86, 0)",
+                backdropFilter: latest > 0 ? "blur(15px)" : "blur(0px)",
                 width: latest > 0 ? "70%" : "100%",
                 borderRadius: latest > 0 ? "9999px" : "0px",
-                // boxShadow: latest > 0 ? "0 4px 6px -1px rgba(74, 74, 74, 0.165)), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" : "none",
+                // boxShadow: latest > 0 ? "0 4px 6px -1px rgba(42, 41, 41, 0.275)), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" : "none",
             });
         });
     }, [controls, scrollY]);
 
 
-
-    // const toggleMenu = () => {
-    //     setIsMenuOpen(!isMenuOpen);
-    //     const tl = gsap.timeline();
-
-    //     if (!isMenuOpen) {
-    //         document.body.style.overflow = 'hidden';
-    //         if (latests > 0) {
-    //             tl.fromTo(animationRef.current, {
-    //                 backgroundColor: "rgba(74, 74, 74, 0.165)",
-    //                 backdropFilter: "blur(10px)",
-    //                 width: "70%",
-    //                 boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    //                 duration: 0.3,
-    //                 ease: "power2.out"
-    //             }, {
-    //                 backgroundColor: "rgba(74, 74, 74, 0.165)",
-    //                 backdropFilter: "blur(10px)",
-    //                 borderRadius: "0px",
-    //                 width: "100%",
-    //                 boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    //                 duration: 0.3,
-    //                 ease: "power2.out",
-    //             }).fromTo(animationRef.current, {
-    //                 delay: 1,
-    //                 backgroundColor: "rgba(74, 74, 74, 0.165)",
-    //                 backdropFilter: "blur(10px)",
-    //                 height: "64px",
-    //                 borderRadius: "0px",
-    //                 boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    //                 duration: 0.3,
-    //                 ease: "power2.out"
-    //             }, {
-    //                 backgroundColor: "rgba(74, 74, 74, 0.165)",
-    //                 backdropFilter: "blur(10px)",
-    //                 borderRadius: "0px",
-    //                 height: "100%",
-    //                 boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    //                 duration: 0.3,
-    //                 ease: "power2.out",
-    //             }, "+=1").fromTo(linksRef.current, {
-    //                 opacity: 0,
-    //                 y: 20
-    //             }, {
-    //                 opacity: 1,
-    //                 y: 0,
-    //                 duration: 0.5,
-    //                 ease: "power2.out"
-    //             })
-    //         } else {
-    //             tl.fromTo(animationRef.current, {
-    //                 height: "64px",
-    //                 borderRadius: "0px",
-    //                 ease: "power2.out"
-    //             }, {
-    //                 backgroundColor: "rgba(74, 74, 74, 0.165)",
-    //                 boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    //                 backdropFilter: "blur(10px)",
-    //                 height: "100%",
-    //                 duration: 0.5,
-    //                 borderRadius: "0px",
-    //                 ease: "power2.out",
-    //             }).fromTo(linksRef.current, {
-    //                 opacity: 0,
-    //                 y: 20
-    //             }, {
-    //                 opacity: 1,
-    //                 y: 0,
-    //                 duration: 0.5,
-    //                 ease: "power2.out"
-    //             })
-    //         }
-    //     } else {
-    //         if (latests > 0) {
-    //             tl.fromTo(animationRef.current, {
-    //                 width: "100%",
-    //                 height: "100%", // Animate to 100%
-    //                 duration: 0.5, // Duration for height animation,
-    //                 borderRadius: "0px",
-    //                 ease: "power2.out"
-    //             }, {
-    //                 width: "100%",
-    //                 height: "64px", // Animate to 100%
-    //                 duration: 0.5, // Duration for height animation,
-    //                 borderRadius: "0px",
-    //                 ease: "power2.out"
-    //             }).fromTo(animationRef.current, {
-    //                 width: "100%",
-    //                 duration: 0.5, // Duration for height animation,
-    //                 borderRadius: "0px",
-    //                 ease: "power2.out"
-    //             }, {
-    //                 width: "70%",
-    //                 duration: 0.5, // Duration for height animation,
-    //                 borderRadius: "9999px",
-    //                 ease: "power2.out",
-
-    //             },)
-    //         } else {
-    //             tl.fromTo(animationRef.current, {
-    //                 width: "100%",
-    //                 height: "100%", // Animate to 100%
-    //                 duration: 0.5, // Duration for height animation,
-    //                 borderRadius: "0px",
-    //                 ease: "power2.out"
-    //             }, {
-    //                 width: "100%",
-    //                 backgroundColor: "transparent",
-    //                 height: "64px", // Animate to 100%
-    //                 duration: 0.5, // Duration for height animation,
-    //                 borderRadius: "0px",
-    //                 ease: "power2.out",
-
-    //             })
-    //         }
-    //         document.body.style.overflow = 'unset'; // Enable scrolling
-    //     }
-    // };
 
 
 
@@ -212,7 +94,7 @@ const Navbars = () => {
 
                         <Button className="hidden md:flex text-nowrap">Get Started</Button>
                         <div className="block md:hidden">
-                            <Hamburger onToggle={toggled => {
+                            <Hamburger size={17} onToggle={toggled => {
                                 const tl = gsap.timeline();
                                 if (toggled) {
                                     setIsMenuOpen(true)
@@ -221,35 +103,35 @@ const Navbars = () => {
                                     document.body.style.overflow = 'hidden';
                                     if (latests > 0) {
                                         tl.fromTo(animationRef.current, {
-                                            backgroundColor: "rgba(74, 74, 74, 0.165)",
-                                            backdropFilter: "blur(10px)",
+                                            backgroundColor: "rgba(29, 28, 28, 0.596)",
+                                            backdropFilter: "blur(15px)",
                                             width: "70%",
-                                            // boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+                                            // boxShadow: "0 4px 6px -1px rgba(29, 28, 28, 0.596), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                                             duration: 0.1,
                                             ease: "power2.out"
                                         }, {
-                                            backgroundColor: "rgba(74, 74, 74, 0.165)",
-                                            backdropFilter: "blur(10px)",
+                                            backgroundColor: "rgba(29, 28, 28, 0.596)",
+                                            backdropFilter: "blur(15px)",
                                             borderRadius: "0px",
                                             width: "100%",
-                                            // boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+                                            // boxShadow: "0 4px 6px -1px rgba(29, 28, 28, 0.596), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                                             duration: 0.1,
                                             ease: "power2.out",
                                         }).fromTo(animationRef.current, {
                                             delay: 0.2,
-                                            backgroundColor: "rgba(74, 74, 74, 0.165)",
-                                            backdropFilter: "blur(10px)",
+                                            backgroundColor: "rgba(29, 28, 28, 0.596)",
+                                            backdropFilter: "blur(15px)",
                                             height: "64px",
                                             borderRadius: "0px",
-                                            // boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+                                            // boxShadow: "0 4px 6px -1px rgba(29, 28, 28, 0.596), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                                             duration: 0.1,
                                             ease: "power2.out"
                                         }, {
-                                            backgroundColor: "rgba(74, 74, 74, 0.165)",
-                                            backdropFilter: "blur(10px)",
+                                            backgroundColor: "rgba(29, 28, 28, 0.596)",
+                                            backdropFilter: "blur(15px)",
                                             borderRadius: "0px",
                                             height: "100%",
-                                            // boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+                                            // boxShadow: "0 4px 6px -1px rgba(29, 28, 28, 0.596), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                                             duration: 0.1,
                                             ease: "power2.out",
                                         }, "+=1").fromTo(linksRef.current, {
@@ -267,9 +149,9 @@ const Navbars = () => {
                                             borderRadius: "0px",
                                             ease: "power2.out"
                                         }, {
-                                            backgroundColor: "rgba(74, 74, 74, 0.165)",
-                                            // boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-                                            backdropFilter: "blur(10px)",
+                                            backgroundColor: "rgba(29, 28, 28, 0.596)",
+                                            // boxShadow: "0 4px 6px -1px rgba(29, 28, 28, 0.596), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+                                            backdropFilter: "blur(15px)",
                                             height: "100%",
                                             duration: 0.3,
                                             borderRadius: "0px",

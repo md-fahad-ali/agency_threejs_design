@@ -7,7 +7,7 @@ import Wave from '../pages/animations/wave.json'
 import Button from "@/components/Button";
 import { Roboto } from "next/font/google";
 
-const roboto = Roboto({ weight: '400', subsets: ["latin"] });
+const roboto = Roboto({ weight: '500', subsets: ["latin"] });
 
 export default function Poster() {
   const textRef1 = useRef(null);
@@ -59,17 +59,17 @@ export default function Poster() {
     <div className="bg-zinc-900 text-white">
       <section className="flex w-full items-center content-center justify-center">
         <div className="w-[100%] md:w-[85%]">
-          <div className="flex pl-[3.5rem] lg:pl-16 z-[9] items-center relative gap-[10px] top-[39px]">
+          <div className="flex pl-[1.5rem] lg:pl-16 z-[9] items-center relative gap-[10px] top-[39px]">
             <p className=" text-white">Hey We are Flowbit</p>
             <Lottie animationData={Wave} loop={true} className="w-[30px]" />
           </div>
-          <div className="relative w-full flex flex-col md:flex-row items-start justify-between p-12 bg-zinc-900">
+          <div className="relative w-full flex flex-col md:flex-row items-start justify-between p-12 pl-[1rem] pr-[1rem] bg-zinc-900">
             <div className="z-10 top-[50px] absolute">
               <div className="gooey-container">
                 <div className="flex">
                   <div className="relative">
                     <h1
-                      className={`gooey-text text-xl lg:text-6xl dm:text-5xl sm:text-4xl ss:text-2xl bg-zinc-900 inline tracking-tight ${roboto.className}`}
+                      className={`gooey-text text-[1.8rem] lg:text-6xl dm:text-5xl sm:text-4xl ss:text-2xl bg-zinc-900 inline tracking-tight ${roboto.className}`}
                       style={{
                         lineHeight: 1.3,
                         paddingBottom: "25px",
