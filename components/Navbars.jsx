@@ -225,7 +225,7 @@ const Navbars = () => {
                                             backdropFilter: "blur(10px)",
                                             width: "70%",
                                             // boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-                                            duration: 0.3,
+                                            duration: 0.1,
                                             ease: "power2.out"
                                         }, {
                                             backgroundColor: "rgba(74, 74, 74, 0.165)",
@@ -233,16 +233,16 @@ const Navbars = () => {
                                             borderRadius: "0px",
                                             width: "100%",
                                             // boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-                                            duration: 0.3,
+                                            duration: 0.1,
                                             ease: "power2.out",
                                         }).fromTo(animationRef.current, {
-                                            delay: 1,
+                                            delay: 0.2,
                                             backgroundColor: "rgba(74, 74, 74, 0.165)",
                                             backdropFilter: "blur(10px)",
                                             height: "64px",
                                             borderRadius: "0px",
                                             // boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-                                            duration: 0.3,
+                                            duration: 0.1,
                                             ease: "power2.out"
                                         }, {
                                             backgroundColor: "rgba(74, 74, 74, 0.165)",
@@ -250,7 +250,7 @@ const Navbars = () => {
                                             borderRadius: "0px",
                                             height: "100%",
                                             // boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-                                            duration: 0.3,
+                                            duration: 0.1,
                                             ease: "power2.out",
                                         }, "+=1").fromTo(linksRef.current, {
                                             opacity: 0,
@@ -258,7 +258,7 @@ const Navbars = () => {
                                         }, {
                                             opacity: 1,
                                             y: 0,
-                                            duration: 0.5,
+                                            duration: 0.3,
                                             ease: "power2.out"
                                         })
                                     } else {
@@ -271,7 +271,7 @@ const Navbars = () => {
                                             // boxShadow: "0 4px 6px -1px rgba(74, 74, 74, 0.165), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                                             backdropFilter: "blur(10px)",
                                             height: "100%",
-                                            duration: 0.5,
+                                            duration: 0.3,
                                             borderRadius: "0px",
                                             ease: "power2.out",
                                         }).fromTo(linksRef.current, {
