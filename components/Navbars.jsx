@@ -51,7 +51,7 @@ const Navbars = () => {
                 backgroundColor: latest > 0 ? "rgba(29, 28, 28, 0.596)" : "rgba(87, 86, 86, 0)",
                 backdropFilter: latest > 0 ? "blur(15px)" : "blur(0px)",
                 width: latest > 0 ? "70%" : "100%",
-                top: latest > 0 ? "3px" : "0px",
+                top: latest > 0 ? "10px" : "0px",
                 borderRadius: latest > 0 ? "9999px" : "0px",
                 // boxShadow: latest > 0 ? "0 4px 6px -1px rgba(42, 41, 41, 0.275)), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" : "none",
             });
@@ -67,7 +67,7 @@ const Navbars = () => {
         <div>
             <motion.nav
                 className={cn(
-                    "fixed -top-[16px] left-0 right-0 transition-all duration-300 ease-in-out mx-auto mt-4 z-[9999]"
+                    "fixed -top-[16px] left-0 right-0 transition-all duration-300 ease-in-out mx-auto z-[9999]"
                 )}
                 initial={{ y: 0 }}
                 animate={controls}
@@ -108,6 +108,7 @@ const Navbars = () => {
                                             backdropFilter: "blur(15px)",
                                             width: "70%",
                                             // boxShadow: "0 4px 6px -1px rgba(29, 28, 28, 0.596), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+                                            top: "3px",
                                             duration: 0.1,
                                             ease: "power2.out"
                                         }, {
@@ -123,8 +124,9 @@ const Navbars = () => {
                                             delay: 0.2,
                                             backgroundColor: "rgba(29, 28, 28, 0.596)",
                                             backdropFilter: "blur(15px)",
-                                            height: "64px",
+                                            height: "60px",
                                             borderRadius: "0px",
+                                            top: "0px",
                                             // boxShadow: "0 4px 6px -1px rgba(29, 28, 28, 0.596), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                                             duration: 0.1,
                                             ease: "power2.out"
@@ -133,6 +135,7 @@ const Navbars = () => {
                                             backdropFilter: "blur(15px)",
                                             borderRadius: "0px",
                                             height: "100%",
+                                            top: "0px",
                                             // boxShadow: "0 4px 6px -1px rgba(29, 28, 28, 0.596), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                                             duration: 0.1,
                                             ease: "power2.out",
@@ -147,7 +150,7 @@ const Navbars = () => {
                                         })
                                     } else {
                                         tl.fromTo(animationRef.current, {
-                                            height: "64px",
+                                            height: "60px",
                                             borderRadius: "0px",
                                             ease: "power2.out"
                                         }, {
@@ -181,7 +184,7 @@ const Navbars = () => {
                                             ease: "power2.out"
                                         }, {
                                             width: "100%",
-                                            height: "64px", // Animate to 100%
+                                            height: "60px", // Animate to 100%
                                             duration: 0.5, // Duration for height animation,
                                             borderRadius: "0px",
                                             ease: "power2.out"
@@ -207,7 +210,7 @@ const Navbars = () => {
                                         }, {
                                             width: "100%",
                                             backgroundColor: "transparent",
-                                            height: "64px", // Animate to 100%
+                                            height: "60px", // Animate to 100%
                                             duration: 0.5, // Duration for height animation,
                                             borderRadius: "0px",
                                             ease: "power2.out",

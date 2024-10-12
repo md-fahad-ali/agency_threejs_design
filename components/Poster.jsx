@@ -6,8 +6,10 @@ import Lottie from "lottie-react";
 import Wave from '../pages/animations/wave.json'
 import Button from "@/components/Button";
 import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 const roboto = Roboto({ weight: '500', subsets: ["latin"] });
+const pop = Poppins({ weight: '600', subsets: ["latin"] });
 
 export default function Poster() {
   const textRef1 = useRef(null);
@@ -69,7 +71,7 @@ export default function Poster() {
                 <div className="flex">
                   <div className="relative">
                     <h1
-                      className={`gooey-text text-[1.6rem] lg:text-6xl dm:text-5xl sm:text-4xl ss:text-2xl bg-zinc-900 inline tracking-tight ${roboto.className}`}
+                      className={`gooey-text text-[1.6rem] lg:text-6xl dm:text-5xl sm:text-4xl ss:text-2xl bg-zinc-900 inline tracking-tight ${pop.className}`}
                       style={{
                         lineHeight: 1.3,
                         paddingBottom: "25px",
