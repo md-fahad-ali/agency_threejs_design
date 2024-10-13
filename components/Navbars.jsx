@@ -67,7 +67,7 @@ const Navbars = () => {
         <div>
             <motion.nav
                 className={cn(
-                    "fixed h-[50px] md:h-auto top-[0px] left-0 right-0 transition-all duration-300 ease-in-out mx-auto z-[9999]"
+                    "fixed h-[50px] md:h-auto top-[0px] left-0 right-0 transition-all duration-300 ease-in-out mx-auto z-[9999999999999]"
                 )}
                 initial={{ y: 0 }}
                 animate={controls}
