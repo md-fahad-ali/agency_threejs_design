@@ -62,7 +62,7 @@ export default function Poster() {
       <section className="flex w-full items-center content-center justify-center">
         <div className="w-[100%] md:w-[85%]">
           <div className="flex pl-[1.5rem] lg:pl-[2rem] z-[9] items-center relative gap-[10px] top-[39px]">
-            <p className=" text-white">Hey We are Flowbit</p>
+            <p className=" text-white">{`Hey, We are Flowbit`}</p>
             <Lottie animationData={Wave} loop={true} className="w-[30px]" />
           </div>
           <div className="relative w-full flex flex-col md:flex-row items-start justify-between p-12 pl-[1rem] pr-[1rem] bg-zinc-900">
@@ -164,12 +164,7 @@ export default function Poster() {
                   >
                     Contact Us
                   </Button>
-                  {/* <button
-                    ref={button2Ref}
-                    className="px-6 py-3 hidden opacity-0 sm:block bg-black text-white rounded-lg"
-                  >
-                    Schedule a Call
-                  </button> */}
+                 
                 </div>
               </div>
             </div>
@@ -178,7 +173,7 @@ export default function Poster() {
 
             >
               <CityFuture canvaRef={canvaRef} />
-              <div className="absolute w-full h-full top-[0px] z-[99999999] block sm:hidden"></div>
+              <div className="absolute w-full h-full top-[183px] z-[9999] block sm:hidden"></div>
             </div>
           </div>
         </div>
