@@ -50,25 +50,19 @@ const Navbars = () => {
             controls.start({
                 backgroundColor: latest > 0 ? "rgba(29, 28, 28, 0.596)" : "rgba(87, 86, 86, 0)",
                 backdropFilter: latest > 0 ? "blur(15px)" : "blur(0px)",
-                width: latest > 0 ? "70%" : "100%",
+                // width: latest > 0 ? "70%" : "85%",
                 top: latest > 0 ? "10px" : "0px",
                 borderRadius: latest > 0 ? "9999px" : "0px",
                 // boxShadow: latest > 0 ? "0 4px 6px -1px rgba(42, 41, 41, 0.275)), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" : "none",
             });
         });
     }, [controls, scrollY]);
-
-
-
-
-
-
     return (
         <div>
             <motion.nav
-                className={cn(
-                    "fixed h-[50px] md:h-auto top-[0px] left-0 right-0 transition-all duration-300 ease-in-out mx-auto z-[9999999999999]"
-                )}
+                className={
+                    `fixed h-[50px] md:h-auto ${latests > 0 ? "w-[70%] md:w-[70%] " : "w-full md:w-[85%]"} top-[5px] left-0 right-0 transition-all duration-300 ease-in-out mx-auto z-[9999999999999]`
+                }
                 initial={{ y: 0 }}
                 animate={controls}
                 style={{
@@ -77,7 +71,7 @@ const Navbars = () => {
                 ref={animationRef}
                 transition={{ duration: 0.3 }}
             >
-                <div className="max-w-[100%] md:max-w-[85%] relative -top-[7px] md:top-auto mx-auto px-4 sm:px-6 lg:px-8">
+                <div className={` relative -top-[7px] md:top-auto mx-auto px-4 sm:px-6 lg:px-8`}>
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center pl-[8px] sm:pl-[0px]">
                             <Link href="/" className="text-white font-bold text-lg">
