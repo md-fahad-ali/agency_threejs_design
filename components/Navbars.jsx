@@ -77,7 +77,7 @@ const Navbars = () => {
                 ref={animationRef}
                 transition={{ duration: 0.3 }}
             >
-                <div className="max-w-[97rem] relative -top-[7px] md:top-auto mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-[100%] md:max-w-[85%] relative -top-[7px] md:top-auto mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center pl-[8px] sm:pl-[0px]">
                             <Link href="/" className="text-white font-bold text-lg">
