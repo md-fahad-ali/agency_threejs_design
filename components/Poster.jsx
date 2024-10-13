@@ -9,7 +9,7 @@ import { Roboto } from "next/font/google";
 import { Poppins } from "next/font/google";
 
 const roboto = Roboto({ weight: '500', subsets: ["latin"] });
-const pop = Poppins({ weight: '600', subsets: ["latin"] });
+const pop = Poppins({ weight: '500', subsets: ["latin"] });
 
 export default function Poster() {
   const textRef1 = useRef(null);
@@ -58,10 +58,10 @@ export default function Poster() {
   }, []);
 
   return (
-    <div className="bg-zinc-900 text-white">
+    <div className="bg-zinc-900 text-white -mt-[15px]">
       <section className="flex w-full items-center content-center justify-center">
         <div className="w-[100%] md:w-[85%]">
-          <div className="flex pl-[1.5rem] lg:pl-16 z-[9] items-center relative gap-[10px] top-[39px]">
+          <div className="flex pl-[1.5rem] lg:pl-[2rem] z-[9] items-center relative gap-[10px] top-[39px]">
             <p className=" text-white">Hey We are Flowbit</p>
             <Lottie animationData={Wave} loop={true} className="w-[30px]" />
           </div>
@@ -71,7 +71,7 @@ export default function Poster() {
                 <div className="flex">
                   <div className="relative">
                     <h1
-                      className={`gooey-text text-[1.6rem] lg:text-6xl dm:text-5xl sm:text-4xl ss:text-2xl bg-zinc-900 inline tracking-tight ${pop.className}`}
+                      className={`gooey-text text-[1.5rem] lg:text-6xl dm:text-5xl sm:text-4xl ss:text-2xl bg-zinc-900 inline tracking-tight ${pop.className}`}
                       style={{
                         lineHeight: 1.3,
                         paddingBottom: "25px",
@@ -159,7 +159,7 @@ export default function Poster() {
                 </div>
                 <div className="flex space-x-4">
                   <Button
-                    className=" bg-black relative -left-[9px] -top-[25px] border-none"
+                    className=" bg-black relative -left-[9px] -top-[19px] md:-top-[15px] border-none"
                     button1Ref={button1Ref}
                   >
                     Contact Us
@@ -174,10 +174,11 @@ export default function Poster() {
               </div>
             </div>
             <div
-              className="w-[100%] relative top-[2px] h-[70vh] ss:h-[80dvh] overflow-hidden rounded-[30px]"
-              style={{ borderRadius: "30px" }}
+              className="w-[100%] relative top-[2px] h-[70vh] ss:h-[80dvh] overflow-hidden rounded-[15px] sm:rounded-[30px]"
+
             >
               <CityFuture canvaRef={canvaRef} />
+              <div className="absolute w-full h-full top-[0px] z-[99999999] block sm:hidden"></div>
             </div>
           </div>
         </div>

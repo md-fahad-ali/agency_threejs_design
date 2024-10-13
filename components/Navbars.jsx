@@ -67,7 +67,7 @@ const Navbars = () => {
         <div>
             <motion.nav
                 className={cn(
-                    "fixed -top-[16px] left-0 right-0 transition-all duration-300 ease-in-out mx-auto z-[9999]"
+                    "fixed h-[50px] md:h-auto top-[0px] left-0 right-0 transition-all duration-300 ease-in-out mx-auto z-[9999]"
                 )}
                 initial={{ y: 0 }}
                 animate={controls}
@@ -77,9 +77,9 @@ const Navbars = () => {
                 ref={animationRef}
                 transition={{ duration: 0.3 }}
             >
-                <div className="max-w-[97rem] mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-[97rem] relative -top-[7px] md:top-auto mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
-                        <div className="flex items-center">
+                        <div className="flex items-center pl-[8px] sm:pl-[0px]">
                             <Link href="/" className="text-white font-bold text-lg">
                                 Logo
                             </Link>
@@ -93,7 +93,7 @@ const Navbars = () => {
                             </div>
                         </div>
 
-                        <Button className="hidden md:flex text-nowrap">Get Started</Button>
+                        <Button className="hidden lg:flex text-nowrap">Get Started</Button>
                         <div className="block md:hidden">
                             <Hamburger size={17} onToggle={toggled => {
                                 const tl = gsap.timeline();
@@ -124,7 +124,7 @@ const Navbars = () => {
                                             delay: 0.2,
                                             backgroundColor: "rgba(29, 28, 28, 0.596)",
                                             backdropFilter: "blur(15px)",
-                                            height: "60px",
+                                            height: "50px",
                                             borderRadius: "0px",
                                             top: "0px",
                                             // boxShadow: "0 4px 6px -1px rgba(29, 28, 28, 0.596), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
@@ -150,7 +150,7 @@ const Navbars = () => {
                                         })
                                     } else {
                                         tl.fromTo(animationRef.current, {
-                                            height: "60px",
+                                            height: "50px",
                                             borderRadius: "0px",
                                             ease: "power2.out"
                                         }, {
@@ -184,7 +184,7 @@ const Navbars = () => {
                                             ease: "power2.out"
                                         }, {
                                             width: "100%",
-                                            height: "60px", // Animate to 100%
+                                            height: "50px", // Animate to 100%
                                             duration: 0.5, // Duration for height animation,
                                             borderRadius: "0px",
                                             ease: "power2.out"
@@ -210,7 +210,7 @@ const Navbars = () => {
                                         }, {
                                             width: "100%",
                                             backgroundColor: "transparent",
-                                            height: "60px", // Animate to 100%
+                                            height: "50px", // Animate to 100%
                                             duration: 0.5, // Duration for height animation,
                                             borderRadius: "0px",
                                             ease: "power2.out",
