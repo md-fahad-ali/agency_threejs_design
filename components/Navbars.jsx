@@ -69,7 +69,7 @@ const Navbars = () => {
                     y: isVisible ? 0 : -100,
                 }}
                 ref={animationRef}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.1 }}
             >
                 <div className={` relative -top-[7px] md:top-auto mx-auto px-4 sm:px-6 lg:px-8`}>
                     <div className="flex items-center justify-between h-16">
@@ -139,7 +139,7 @@ const Navbars = () => {
                                         }, {
                                             opacity: 1,
                                             y: 0,
-                                            duration: 0.3,
+                                            duration: 0.1,
                                             ease: "power2.out"
                                         })
                                     } else {
@@ -152,7 +152,7 @@ const Navbars = () => {
                                             // boxShadow: "0 4px 6px -1px rgba(29, 28, 28, 0.596), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                                             backdropFilter: "blur(15px)",
                                             height: "100%",
-                                            duration: 0.3,
+                                            duration: 0.1,
                                             borderRadius: "0px",
                                             ease: "power2.out",
                                         }).fromTo(linksRef.current, {
@@ -161,7 +161,7 @@ const Navbars = () => {
                                         }, {
                                             opacity: 1,
                                             y: 0,
-                                            duration: 0.5,
+                                            duration: 0.1,
                                             ease: "power2.out"
                                         })
                                     }
@@ -173,23 +173,23 @@ const Navbars = () => {
                                         tl.fromTo(animationRef.current, {
                                             width: "100%",
                                             height: "100%", // Animate to 100%
-                                            duration: 0.5, // Duration for height animation,
+                                            duration: 0.1, // Duration for height animation,
                                             borderRadius: "0px",
                                             ease: "power2.out"
                                         }, {
                                             width: "100%",
                                             height: "50px", // Animate to 100%
-                                            duration: 0.5, // Duration for height animation,
+                                            duration: 0.1, // Duration for height animation,
                                             borderRadius: "0px",
                                             ease: "power2.out"
                                         }).fromTo(animationRef.current, {
                                             width: "100%",
-                                            duration: 0.5, // Duration for height animation,
+                                            duration: 0.1, // Duration for height animation,
                                             borderRadius: "0px",
                                             ease: "power2.out"
                                         }, {
                                             width: "70%",
-                                            duration: 0.5, // Duration for height animation,
+                                            duration: 0.1, // Duration for height animation,
                                             borderRadius: "9999px",
                                             ease: "power2.out",
 
@@ -198,14 +198,14 @@ const Navbars = () => {
                                         tl.fromTo(animationRef.current, {
                                             width: "100%",
                                             height: "100%", // Animate to 100%
-                                            duration: 0.5, // Duration for height animation,
+                                            duration: 0.1, // Duration for height animation,
                                             borderRadius: "0px",
                                             ease: "power2.out"
                                         }, {
                                             width: "100%",
                                             backgroundColor: "transparent",
                                             height: "50px", // Animate to 100%
-                                            duration: 0.5, // Duration for height animation,
+                                            duration: 0.1, // Duration for height animation,
                                             borderRadius: "0px",
                                             ease: "power2.out",
 
