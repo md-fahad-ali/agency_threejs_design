@@ -19,6 +19,7 @@
 :root {
   background-color: #18181b;
   color: white;
+  --gap: 20px;
 }
 
 html {
@@ -149,6 +150,64 @@ body {
   );
   background-size: 20px 20px;
 }
+
 .containerBox {
   position: sticky;
+}
+
+@keyframes RightToLeft {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+.rightToleft {
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: RightToLeft 10s linear infinite; /* Adjust duration as needed */
+}
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Public+Sans:wght@100&display=swap");
+
+.a-section {
+  padding: 3em 3% 0;
+}
+
+.a-section-marquee-box {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #181818; /* same as bg */
+  position: relative;
+}
+
+.a-section-marquee-box h2 {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 7em;
+  font-weight: 100;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.marquee-wrapper {
+  display: flex;
+  width: max-content;
+  gap: var(--gap);
+  animation: a-text-scroll 20s linear infinite;
+}
+
+@keyframes a-text-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+.styles_faq-row-wrapper__3vA1D {
+  transform-origin: bottom;
 }

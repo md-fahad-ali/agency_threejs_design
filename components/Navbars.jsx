@@ -7,8 +7,9 @@ import { motion, useAnimation, useScroll } from 'framer-motion';
 import gsap from 'gsap';
 import { Pivot as Hamburger } from 'hamburger-react'
 import Button from "@/components/Button";
+import TransitionLink from '@/ui/TransitionLink';
 
-const Navbars = () => {
+const Navbars = ({ loading, setLoading, trRef }) => {
     const [isVisible, setIsVisible] = useState(true);
 
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -81,7 +82,7 @@ const Navbars = () => {
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-4 text-white">
                                 <Link href="/" className="navanimation py-2 px-3 text-3xl md:text-base">Home</Link>
-                                <Link href="/about" className="navanimation py-2 px-3 text-3xl md:text-base">About</Link>
+                                <TransitionLink href="/about" className="navanimation py-2 px-3 text-3xl md:text-base" trRef={trRef} loading={loading} setLoading={setLoading} >About</TransitionLink>
                                 <Link href="/blogs" className="navanimation py-2 px-3 text-3xl md:text-base">Blogs</Link>
                                 <Link href="/contact" className="navanimation py-2 px-3 text-3xl md:text-base">Contact</Link>
                             </div>
@@ -224,9 +225,9 @@ const Navbars = () => {
                         <Link href="/" className="navanimation pt-[30px]  text-5xl  " >
                             Home
                         </Link>
-                        <Link href="/about" className="navanimation pt-[30px]  text-5xl  " >
+                        <TransitionLink href="/about" className="navanimation pt-[30px]  text-5xl  " trRef={trRef} loading={loading} setLoading={setLoading}>
                             About
-                        </Link>
+                        </TransitionLink>
                         <Link href="/blogs" className="navanimation pt-[30px]  text-5xl  " >
                             Blogs
                         </Link>
